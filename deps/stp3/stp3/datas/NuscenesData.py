@@ -596,6 +596,7 @@ class FuturePredictionDataset(torch.utils.data.Dataset):
             data[key] = []
 
         instance_map = {}
+        data['token'] = self.ixes[self.indices[index][2]]['token']
         # Loop over all the frames in the sequence.
         for i, index_t in enumerate(self.indices[index]):
             if i >= self.receptive_field:
