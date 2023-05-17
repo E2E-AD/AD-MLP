@@ -40,6 +40,10 @@ This repository is an official implementation of the technical report [[AD-MLP]]
 
 * Environment
   Linux, Python==3.7.9, CUDA == 11.2, pytorch == 1.9.1 or paddlepaddle == 2.3.2. Besides, follow instruction in ST-P3 for running its evaluation process.
+  ```
+  cd deps/stp3
+  conda env create -f environment.yml
+  ```
 
 * Prepare Data   
 Download the [nuScenes](https://www.nuscenes.org/download) Dataset.
