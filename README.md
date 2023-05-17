@@ -39,19 +39,20 @@ This repository is an official implementation of the technical report [[AD-MLP]]
 ## Get Started
 
 * Environment
-  Linux, Python==3.7.9, CUDA == 11.2, pytorch == 1.9.1 or paddlepaddle == 2.3.2
+  Linux, Python==3.7.9, CUDA == 11.2, pytorch == 1.9.1 or paddlepaddle == 2.3.2. Besides, follow instruction in ST-P3 for running its evaluation process.
 
 * Prepare Data   
 Download the [nuScenes](https://www.nuscenes.org/download) Dataset.
 
 * Pretrained weights   
-To verify the performance on the nuScenes Dataset, we provide the pretrained model weights ([Google Drive](https://drive.google.com/drive/folders/1CJa54-Ft8qakR4EyRtxvswQxT1dgPB_9) and [Baidu Netdisk](https://pan.baidu.com/s/1cEDETxG-HHwyC7ATBk_hyQ?pwd=9fbf)). 
+To verify the performance on the nuScenes Dataset, we provide the pretrained model weights ([Google Drive](https://drive.google.com/drive/folders/1CJa54-Ft8qakR4EyRtxvswQxT1dgPB_9) and [Baidu Netdisk](https://pan.baidu.com/s/1cEDETxG-HHwyC7ATBk_hyQ?pwd=9fbf)). Please download them (paddle checkpoint, token of validation set...) to the root directory of this project.
 
 * Paddle Evaluation   
   ```
   python paddle/model/AD-MLP.py
   python deps/stp3/evaluate_for_mlp.py
   ```
+The first line save the predicted 6 frame's trajectories of the next 3s in output_data.pkl. And the second line apply ST-P3 evaluation on it. The final evaluation output contains the L2 error and collision rate in the next 1,2,3s.
 
 
 ## Contact
