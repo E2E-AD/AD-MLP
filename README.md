@@ -1,5 +1,5 @@
 # Rethinking the Open-Loop Evaluation of End-to-End Autonomous Driving in nuScenes
-
+This repository is an official implementation of the technical report [[AD-MLP]](https://github.com/E2E-AD/AD-MLP) 
 
 <br/>
 
@@ -11,7 +11,8 @@
 >
 
 ## News
-* Code/Models are released!
+* Paper will be released soon!
+* Code / Models are released!
 
 ## Introduction
 
@@ -35,11 +36,25 @@
 | VAD-Base | 0.17 | 0.34 | 0.60 | 0.07 | **0.10** | 0.24 |
 | Ours | **0.14** | **0.10** | **0.41** | 0.10 | **0.10** | **0.17** |
 
+## Get Started
+
+* Environment
+  Linux, Python==3.7.9, CUDA == 11.2, pytorch == 1.9.1
+
+* Prepare Data   
+Download the [[nuScenes Dataset]](https://www.nuscenes.org/download).
+
+* Pretrained weights   
+To verify the performance on the nuScenes Dataset, we provide the pretrained model [weights](https://drive.google.com/file/d/1ABI5BoQCkCkP4B0pO5KBJ3Ni0tei0gZi/view?usp=sharing). 
+
+* Train & Eval
+sh xxxx.sh
+
 
 ## Contact
 If you have any questions or suggestions about this repo, please feel free to contact us (jtzhai30@gmail.com, j04.liu@gmail.com, wangjingdong@outlook.com).
 
-## References
+## Acknowledgement
 This repo is build based on [ST-P3](https://github.com/OpenPerceptionX/ST-P3). Thanks for their great work.
 
 ## License
