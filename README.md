@@ -56,7 +56,7 @@ To verify the performance on the nuScenes Dataset, we provide the pretrained mod
   python paddle/model/AD-MLP.py
   python deps/stp3/evaluate_for_mlp.py
   ```
-The first line save the predicted 6 frame's trajectories of the next 3s in output_data.pkl. And the second line apply ST-P3 evaluation on it. The final evaluation output contains the L2 error and collision rate in the next 1,2,3s.
+  The first line save the predicted 6 frame's trajectories of the next 3s in output_data.pkl. And the second line apply ST-P3 evaluation on it. The final evaluation output contains the L2   error and collision rate in the next 1,2,3s.
 
 
 ## Contact
