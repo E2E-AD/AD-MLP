@@ -32,12 +32,12 @@ class ADMLP(nn.Layer):
         self.velocity_dim=3
         self.past_frame=5
         self.plan_head=nn.Sequential(
-							nn.Linear(self.velocity_dim*(self.past_frame+2), 512),
-							nn.ReLU(),
-                            nn.Linear(512, 512),
-                            nn.ReLU(),
-                            nn.Linear(512,7*3)
-						)
+            nn.Linear(self.velocity_dim*(self.past_frame+2), 512),
+            nn.ReLU(),
+            nn.Linear(512, 512),
+            nn.ReLU(),
+            nn.Linear(512,7*3)
+            )
     def forward(self, input, token):
         device=input.place
         dtype=input.dtype
@@ -75,16 +75,6 @@ class ADMLP(nn.Layer):
     
 
 if __name__ == '__main__':
-    ############# pytorch pth -> paddle pdparams ###################
-    # import torch
-    # params = torch.load('mlp.pth')
-    # paddleparams = dict()
-    # for key, value in params.items():
-    #     value = value.cpu().numpy()
-    #     value = paddle.to_tensor(value, dtype='float32')
-    #     paddleparams[key] = value
-    # paddle.save(paddleparams, 'mlp.pdparams')
-
     ############## load pdparams ##################
     params_paddle = paddle.load('mlp.pdparams')
 
@@ -121,5 +111,5 @@ if __name__ == '__main__':
         val_data_paddle_pkl[token] = pred
         i+=1
 
-    f = open("val_data.pkl","wb")
+    f = open("output_data.pkl","wb")
     pickle.dump(val_data_paddle_pkl, f)
