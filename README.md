@@ -39,13 +39,13 @@ This repository is an official implementation of the technical report [[AD-MLP]]
 ## Get Started
 
 * Environment
-  Linux, Python==3.7.9, CUDA == 11.2, pytorch == 1.9.1, paddlepaddle == 2.3.2
+  Linux, Python==3.7.9, CUDA == 11.2, pytorch == 1.9.1 or paddlepaddle == 2.3.2
 
 * Prepare Data   
-Download the [[nuScenes]](https://www.nuscenes.org/download) Dataset.
+Download the [nuScenes](https://www.nuscenes.org/download) Dataset.
 
 * Pretrained weights   
-To verify the performance on the nuScenes Dataset, we provide the pretrained model [weights](https://drive.google.com/file/d/1ABI5BoQCkCkP4B0pO5KBJ3Ni0tei0gZi/view?usp=sharing). 
+To verify the performance on the nuScenes Dataset, we provide the pretrained model [weights](https://drive.google.com/drive/folders/1CJa54-Ft8qakR4EyRtxvswQxT1dgPB_9). 
 
 * Paddle Evaluation   
   ```
