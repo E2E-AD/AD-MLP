@@ -1,4 +1,4 @@
-# Is Perception Information Necessary in End-to-End Autonomous Driving? An Empirical Study on the nuScenes Dataset
+# Rethinking the Open-Loop Evaluation of End-to-End Autonomous Driving in nuScenes
 
 
 <br/>
@@ -11,7 +11,7 @@
 >
 
 ## News
-* Code/Models are coming soon. Please stay tuned!
+* Code/Models are released!
 
 ## Introduction
 
@@ -51,7 +51,7 @@ If you find our work and this repository useful. Please consider giving a star a
 
 ```bibtex
 @article{zhai2023,
-  title={},
+  title={Rethinking the Open-Loop Evaluation of End-to-End Autonomous Driving in nuScenes},
   author={Zhai, Jiang-Tian and Feng, Ze and Du, Jihao and Mao, Yongqiang and Liu, Jiang-Jiang and Tan, Zichang and Ye, Xiaoqing and Wang, Jingdong},
   journal={Arxiv},
 }
