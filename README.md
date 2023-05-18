@@ -64,7 +64,8 @@ To verify the performance on the nuScenes Dataset, we provide the pretrained mod
   python deps/stp3/evaluate_for_mlp.py
   ```
   The first line saves the predicted 6 frames' trajectories of the next 3s in output_data.pkl. And the second line applies the ST-P3 evaluation on it. The final evaluation output contains the L2 error and collision rate in the next 1, 2 and 3s.
-
+  
+  Two versions of evaluation metrics are provided: online and offline. The offline version uses pre-stored ground truth and is far faster than online one. The code defaults to offline.
 
 ## Contact
 If you have any questions or suggestions about this repo, please feel free to contact us (jtzhai30@gmail.com, j04.liu@gmail.com, yxq@whu.edu.cn, wangjingdong@outlook.com).
