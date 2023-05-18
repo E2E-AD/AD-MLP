@@ -1,4 +1,7 @@
 # Rethinking the Open-Loop Evaluation of End-to-End Autonomous Driving in nuScenes
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rethinking-the-open-loop-evaluation-of-end-to/trajectory-planning-on-nuscenes)](https://paperswithcode.com/sota/trajectory-planning-on-nuscenes?p=rethinking-the-open-loop-evaluation-of-end-to)
+
 This repository is an official implementation of the technical report [AD-MLP](https://arxiv.org/pdf/2305.10430.pdf) 
 
 <br/>
