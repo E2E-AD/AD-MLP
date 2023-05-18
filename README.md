@@ -2,7 +2,7 @@
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rethinking-the-open-loop-evaluation-of-end-to/trajectory-planning-on-nuscenes)](https://paperswithcode.com/sota/trajectory-planning-on-nuscenes?p=rethinking-the-open-loop-evaluation-of-end-to)
 
-This repository is an official implementation of the technical report on arxiv [AD-MLP](https://arxiv.org/pdf/2305.10430.pdf).
+This repository is an official implementation of the technical report [AD-MLP](https://arxiv.org/pdf/2305.10430.pdf).
 
 <br/>
 
@@ -14,7 +14,7 @@ This repository is an official implementation of the technical report on arxiv [
 >
 
 ## News
-* 2023.05.18: Paper is released! [Arxiv](https://arxiv.org/pdf/2305.10430.pdf)
+* 2023.05.18: Paper is released on [Arxiv](https://arxiv.org/pdf/2305.10430.pdf)!
 * 2023.05.17: Code / Models are released!
 
 ## Introduction
@@ -24,7 +24,7 @@ This repository is an official implementation of the technical report on arxiv [
 </div>
 
 
-**Interesting Tips!**
+### Interesting Tips!
 
 - We use a simple MLP-based approach that takes raw sensor data as input and outputs the future trajectory planning of the ego vehicle, without using any perception or prediction information such as camera images or LiDAR. This simple method achieves state-of-the-art end-to-end planning performance on the nuScenes Dataset, reducing the average L2 error by about 30\% on the nuScenes open-loop evaluation metrics.
 - The primary objective of this work is to present our observations **rather than** to propose a new method.
@@ -67,7 +67,7 @@ To verify the performance on the nuScenes Dataset, we provide the pretrained mod
 
 
 ## Contact
-If you have any questions or suggestions about this repo, please feel free to contact us (jtzhai30@gmail.com, j04.liu@gmail.com, wangjingdong@outlook.com).
+If you have any questions or suggestions about this repo, please feel free to contact us (jtzhai30@gmail.com, j04.liu@gmail.com, yxq@whu.edu.cn, wangjingdong@outlook.com).
 
 ## Acknowledgement
 This repo is build based on [ST-P3](https://github.com/OpenPerceptionX/ST-P3). Thanks for their great work.
