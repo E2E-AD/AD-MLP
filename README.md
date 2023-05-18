@@ -14,7 +14,7 @@ This repository is an official implementation of the technical report [AD-MLP](h
 >
 
 ## News
-* 2023.05.18: Paper is released on [Arxiv](https://arxiv.org/pdf/2305.10430.pdf)!
+* 2023.05.18: Paper is released on [arxiv](https://arxiv.org/pdf/2305.10430.pdf)!
 * 2023.05.17: Code / Models are released!
 
 ## Introduction
