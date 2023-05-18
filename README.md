@@ -24,8 +24,10 @@ This repository is an official implementation of the technical report on arxiv [
 </div>
 
 
+**Interesting Tips!**
+
 - We use a simple MLP-based approach that takes raw sensor data as input and outputs the future trajectory planning of the ego vehicle, without using any perception or prediction information such as camera images or LiDAR. This simple method achieves state-of-the-art end-to-end planning performance on the nuScenes Dataset, reducing the average L2 error by about 30\% on the nuScenes open-loop evaluation metrics.
-- The primary objective of this work is to present our observations rather than to propose a new method.
+- The primary objective of this work is to present our observations **rather than** to propose a new method.
 - Our findings demonstrate the potential limitations of the current evaluation scheme on the nuScenes dataset.
 - Although our model performs well within the confines of the nuScenes Dataset, we acknowledge that it is merely an impractical toy incapable of functioning in real-world scenarios. Driving without any perception surrounding knowledge beyond the ego vehicle’s states is an insurmountable challenge. 
 - We hope our findings will stimulate further research in the field, encouraging a re-evaluation and enhancement of the planning task for end-to-end autonomous driving.
