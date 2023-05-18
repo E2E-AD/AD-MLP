@@ -1,5 +1,5 @@
 # Rethinking the Open-Loop Evaluation of End-to-End Autonomous Driving in nuScenes
-This repository is an official implementation of the technical report [[AD-MLP]](https://arxiv.org/pdf/2305.10430.pdf) 
+This repository is an official implementation of the technical report [AD-MLP](https://arxiv.org/pdf/2305.10430.pdf) 
 
 <br/>
 
