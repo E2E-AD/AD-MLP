@@ -2,7 +2,7 @@
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rethinking-the-open-loop-evaluation-of-end-to/trajectory-planning-on-nuscenes)](https://paperswithcode.com/sota/trajectory-planning-on-nuscenes?p=rethinking-the-open-loop-evaluation-of-end-to)
 
-This repository is an official implementation of the technical report [AD-MLP](https://arxiv.org/pdf/2305.10430.pdf) 
+This repository is an official implementation of the technical report on arxiv [AD-MLP](https://arxiv.org/pdf/2305.10430.pdf) 
 
 <br/>
 
@@ -14,7 +14,7 @@ This repository is an official implementation of the technical report [AD-MLP](h
 >
 
 ## News
-* 2023.05.18: Paper is released!
+* 2023.05.18: Paper is released! [Arxiv link](https://arxiv.org/pdf/2305.10430.pdf)
 * 2023.05.17: Code / Models are released!
 
 ## Introduction
@@ -24,9 +24,11 @@ This repository is an official implementation of the technical report [AD-MLP](h
 </div>
 
 
-- We design an MLP-based method that takes raw sensor data as input and directly outputs the future trajectory of the ego vehicle, without using any perception or prediction information such as camera images or LiDAR. 
-- This simple method achieves state-of-the-art end-to-end planning performance on the nuScenes dataset, reducing the average L2 error by about 30\%.
-- We hope our findings are helpful to other researchers in this area.
+- We use a simple MLP-based approach that takes raw sensor data as input and outputs the future trajectory planning of the ego vehicle, without using any perception or prediction information such as camera images or LiDAR. This simple method achieves state-of-the-art end-to-end planning performance on the nuScenes Dataset, reducing the average L2 error by about 30\% on the nuScenes open-loop evaluation metrics.
+- The primary objective of this work is to present our observations rather than to propose a new method.
+- Our findings demonstrate the potential limitations of the current evaluation scheme on the nuScenes dataset.
+- Although our model performs well within the confines of the nuScenes Dataset, we acknowledge that it is merely an impractical toy incapable of functioning in real-world scenarios. Driving without any perception surrounding knowledge beyond the ego vehicle’s states is an insurmountable challenge. 
+- We hope our findings will stimulate further research in the field, encouraging a re-evaluation and enhancement of the planning task for end-to-end autonomous driving.
 
 ## Results
 - Open-loop planning results on [nuScenes](https://github.com/nutonomy/nuscenes-devkit). 
@@ -59,7 +61,7 @@ To verify the performance on the nuScenes Dataset, we provide the pretrained mod
   python paddle/model/AD-MLP.py
   python deps/stp3/evaluate_for_mlp.py
   ```
-  The first line saves the predicted 6 frames' trajectories of the next 3s in output_data.pkl. And the second line applies the ST-P3 evaluation on it. The final evaluation output contains   the L2 error and collision rate in the next 1,2 and 3s.
+  The first line saves the predicted 6 frames' trajectories of the next 3s in output_data.pkl. And the second line applies the ST-P3 evaluation on it. The final evaluation output contains the L2 error and collision rate in the next 1, 2 and 3s.
 
 
 ## Contact
