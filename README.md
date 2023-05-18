@@ -2,7 +2,7 @@
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rethinking-the-open-loop-evaluation-of-end-to/trajectory-planning-on-nuscenes)](https://paperswithcode.com/sota/trajectory-planning-on-nuscenes?p=rethinking-the-open-loop-evaluation-of-end-to)
 
-This repository is an official implementation of the technical report on arxiv [AD-MLP](https://arxiv.org/pdf/2305.10430.pdf) 
+This repository is an official implementation of the technical report on arxiv [AD-MLP](https://arxiv.org/pdf/2305.10430.pdf).
 
 <br/>
 
@@ -14,7 +14,7 @@ This repository is an official implementation of the technical report on arxiv [
 >
 
 ## News
-* 2023.05.18: Paper is released! [Arxiv link](https://arxiv.org/pdf/2305.10430.pdf)
+* 2023.05.18: Paper is released! [Arxiv](https://arxiv.org/pdf/2305.10430.pdf)
 * 2023.05.17: Code / Models are released!
 
 ## Introduction
