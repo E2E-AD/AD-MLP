@@ -1,5 +1,5 @@
 # Rethinking the Open-Loop Evaluation of End-to-End Autonomous Driving in nuScenes
-This repository is an official implementation of the technical report [[AD-MLP]](https://github.com/E2E-AD/AD-MLP) 
+This repository is an official implementation of the technical report [[AD-MLP]](https://arxiv.org/pdf/2305.10430.pdf) 
 
 <br/>
 
@@ -11,8 +11,8 @@ This repository is an official implementation of the technical report [[AD-MLP]]
 >
 
 ## News
-* Paper will be released soon!
-* Code / Models are released!
+* 2023.05.18: Paper is released!
+* 2023.05.17: Code / Models are released!
 
 ## Introduction
 
@@ -73,9 +73,10 @@ All code in this repository is under the [Apache License 2.0](https://www.apache
 If you find our work and this repository useful. Please consider giving a star and citation.
 
 ```bibtex
-@article{zhai2023,
+@article{zhai2023ADMLP,
   title={Rethinking the Open-Loop Evaluation of End-to-End Autonomous Driving in nuScenes},
-  author={Zhai, Jiang-Tian and Feng, Ze and Du, Jihao and Mao, Yongqiang and Liu, Jiang-Jiang and Tan, Zichang and Ye, Xiaoqing and Wang, Jingdong},
-  journal={Arxiv},
+  author={Zhai, Jiang-Tian and Feng, Ze and Du, Jihao and Mao, Yongqiang and Liu, Jiang-Jiang and Tan, Zichang and Yifu Zhang and Ye, Xiaoqing and Wang, Jingdong},
+  journal={arXiv preprint arXiv:2305.10430},
+  year={2023}
 }
 ```
