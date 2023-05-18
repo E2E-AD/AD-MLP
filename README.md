@@ -28,7 +28,7 @@ This repository is an official implementation of the technical report [AD-MLP](h
 ## Results
 - Open-loop planning results on [nuScenes](https://github.com/nutonomy/nuscenes-devkit). 
 
-| Method | L2 (m) 1s | L2 (m) 2s | L2 (m) 3s | Col. (%) 1s | Col. (%) 2s | Col. (%) 3s |
+| Method | L2 (m) 1s $\downarrow$ | L2 (m) 2s $\downarrow$ | L2 (m) 3s $\downarrow$ | Col. (%) 1s $\downarrow$ | Col. (%) 2s $\downarrow$ | Col. (%) 3s $\downarrow$ |
 | :---: | :---: | :---: | :---: | :---:| :---: | :---: |
 | ST-P3 | 1.33 | 2.11 | 2.90 | 0.23 | 0.62 | 1.27 |
 | UniAD | 0.48 | 0.96 | 1.65 | **0.05** | 0.17 | 0.71 |
