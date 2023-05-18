@@ -75,7 +75,7 @@ If you find our work and this repository useful. Please consider giving a star a
 ```bibtex
 @article{zhai2023ADMLP,
   title={Rethinking the Open-Loop Evaluation of End-to-End Autonomous Driving in nuScenes},
-  author={Zhai, Jiang-Tian and Feng, Ze and Du, Jihao and Mao, Yongqiang and Liu, Jiang-Jiang and Tan, Zichang and Yifu Zhang and Ye, Xiaoqing and Wang, Jingdong},
+  author={Zhai, Jiang-Tian and Feng, Ze and Du, Jihao and Mao, Yongqiang and Liu, Jiang-Jiang and Tan, Zichang and Zhang, Yifu and Ye, Xiaoqing and Wang, Jingdong},
   journal={arXiv preprint arXiv:2305.10430},
   year={2023}
 }
