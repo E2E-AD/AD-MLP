@@ -67,6 +67,12 @@ To verify the performance on the nuScenes Dataset, we provide the pretrained mod
   
   Two versions of evaluation metrics are provided: online and offline. The offline version uses pre-stored ground truth and is far faster than online one. The code defaults to offline.
 
+* Training
+The code we use for training the model is located in the directory AD-MLP/pytorch/bevfusion.zip. To use it, you need to refer to https://github.com/mit-han-lab/bevfusion to configure the nuscenes dataset. As the repository does not include the trajectory prediction part, users can refer to the code from ST-P3 for generating nuscenes trajectories during training. Start the training process with run.py under the folder 'bevfusion':
+  ```
+  python run.py
+  ```
+
 ## Contact
 If you have any questions or suggestions about this repo, please feel free to contact us (jtzhai30@gmail.com, j04.liu@gmail.com, yxq@whu.edu.cn, wangjingdong@outlook.com).
 
