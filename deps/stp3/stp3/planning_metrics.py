@@ -79,16 +79,6 @@ class PlanningMetric(Metric):
                 np.logical_and(cc >= 0, cc < self.bev_dimension[1]),
             )
             collision[t] = np.any(segmentation[t, rr[I], cc[I]].cpu().numpy())
-        flag = False
-        l = len(collision)
-        for i in range(l):
-            if flag:
-                collision[i] =True
-            if collision[i]:
-                flag = True
-
-
-
         return torch.from_numpy(collision).to(device=traj.device)
 
     def evaluate_coll(self, trajs, gt_trajs, segmentation):
