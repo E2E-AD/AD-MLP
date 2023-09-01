@@ -68,9 +68,9 @@ To verify the performance on the nuScenes Dataset, we provide the pretrained mod
   Two versions of evaluation metrics are provided: online and offline. The offline version uses pre-stored ground truth and is far faster than online one. The code defaults to offline.
 
 * Training:
-The code we use for training the model is located in the directory AD-MLP/pytorch/bevfusion.zip. To use it, you need to refer to https://github.com/mit-han-lab/bevfusion to configure the nuscenes dataset. As the repository does not include the trajectory prediction part, users can refer to the code from ST-P3 for generating nuscenes trajectories during training. Start the training process with run.py under the folder 'bevfusion':
+The code we use for training the model is located in the [Baidu Netdisk](https://pan.baidu.com/s/1544U0LA_ckbNAFQdENISVg?pwd=7v24). To use it, you need to refer to https://github.com/mit-han-lab/bevfusion to configure the nuscenes dataset and the environment. Start the training process with r1.py under the folder:
   ```
-  python run.py
+  python r1.py
   ```
 * Collision rate evaluation:
 We have observed that the evaluation of model collision rates is sensitive to certain samples. One typical example is when the ego vehicle is in a stationary state, the model often predicts trajectories for the next 3 seconds that are very close to the origin (but not exactly 0). If obstacles exist in the range of [0, 0.5m) in the x,y dimensiosn around the origin, the model's predictions of coordinates with very small absolute values can introduce unstable systematic errors due to the resolution of the occupancy map. To mitigate this issue, we recommend processing the model outputs in the deps/stp3/evaluate_for_mlp.py or at the original model inference stage. For instance, you can set the model's predicted trajectory to zero if the distance from the origin is smaller than a little threshold, e.g. 1e-2m. This approach is similar to the filtering of ground truth trajectories that collide in the original evaluation code, as both methods aim to remove systematic errors. We also suggest reviewing cases where collisions occur.
