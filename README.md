@@ -68,7 +68,7 @@ To verify the performance on the nuScenes Dataset, we provide the pretrained mod
   Two versions of evaluation metrics are provided: online and offline. The offline version uses pre-stored ground truth and is far faster than online one. The code defaults to offline.
 
 * Training:
-The code we use for training the model is located in the [Baidu Netdisk](https://pan.baidu.com/s/1Jm72RnkzSmQEB9b7YRRFng?pwd=343p). To use it, you need to refer to https://github.com/mit-han-lab/bevfusion to configure the nuscenes dataset and the environment. Start the training process with r1.py under the folder:
+The code we use for training the model is located in the [Baidu Netdisk](https://pan.baidu.com/s/1IjN2pUUB35k2ScOitVsuGA?pwd=t4br). To use it, you need to refer to https://github.com/mit-han-lab/bevfusion to configure the nuscenes dataset and the environment. Start the training process with r1.py under the folder:
   python train.py
   ```
 * Collision rate evaluation:
