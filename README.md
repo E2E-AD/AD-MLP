@@ -14,8 +14,8 @@ This repository is an official implementation of the technical report [AD-MLP](h
 >
 
 ## Clarification
-We would like to thank [PointsCoder](https://github.com/PointsCoder) (related to (https://github.com/E2E-AD/AD-MLP/issues/4)) for finding out the mistake in the data we used for training. In short, we mistakenly packaged and used real trajectory data intended for performance debugging. We have fixed the above issue and updated the related links and numbers and want to apology for potential inconvenience.
-In general, we have arrived at numbers that differ slightly from what was reported in the previous technical report. Overall, under open-loop evaluation, the L2 error remains superior (0.23 -> 0.29 vs. VAD-Base’s 0.37), while the collision rate has increased slightly(0.12 -> 0.19) and is slightly lower than that of VAD(0.19 vs. 0.14), which only involves about 2 or 3 samples in all 4819 ones. 
+We would like to thank @PointsCoder (related issue https://github.com/E2E-AD/AD-MLP/issues/4) for finding out the mistake in the data we used for training. In short, we mistakenly packaged and used real trajectory data intended for performance debugging. We have fixed the above issue and updated the related links and numbers and apology for potential inconvenience it may cause.
+In general, we have arrived at numbers that differ slightly from what was reported in the previous technical report. Overall, under open-loop evaluation, the L2 error remains superior (0.23 -> 0.29 vs. VAD-Base’s 0.37), while the collision rate has increased (0.12 -> 0.19) and is slightly lower than that of VAD (0.19 vs. 0.14), which only involves about 2 or 3 cases (4819 in total). 
 However, we argue that the fundamental conclusion remains unchanged, which is that **superior open-loop evaluation performance can be achieved on the nuScenes dataset with just past motion information and a simple model**. It may introduce some challenges in measuring and comparing different methods following this evaluation protocol.
 
 We will also update the technical report recently.
@@ -33,7 +33,7 @@ We will also update the technical report recently.
 
 ### Interesting Tips!
 
-- We use a simple MLP-based approach that takes raw sensor data as input and outputs the future trajectory planning of the ego vehicle, without using any perception or prediction information such as camera images or LiDAR. This simple method achieves state-of-the-art end-to-end planning performance on the nuScenes Dataset, reducing the average L2 error by about 20\% on the nuScenes open-loop evaluation metrics.
+- We use a simple MLP-based approach that takes raw sensor data as input and outputs the future trajectory planning of the ego vehicle, without using any perception or prediction information such as camera images or LiDAR. This simple method achieves comparable end-to-end planning performance on the nuScenes Dataset to the SoTA methods, reducing the average L2 error by about 20\% on the nuScenes open-loop evaluation metrics.
 - The primary objective of this work is to present our observations **rather than** to propose a new method.
 - Our findings demonstrate the potential limitations of the current evaluation scheme on the nuScenes dataset.
 - Although our model performs well within the confines of the nuScenes Dataset, we acknowledge that it is merely an impractical toy incapable of functioning in real-world scenarios. Driving without any perception surrounding knowledge beyond the ego vehicle’s states is an insurmountable challenge. 
@@ -75,21 +75,21 @@ To verify the performance on the nuScenes Dataset, we provide the pretrained mod
   Two versions of evaluation metrics are provided: online and offline. The offline version uses pre-stored ground truth and is far faster than online one. The code defaults to offline.
 
 * Training:
-We upload the training code in pytorch/ folder. Additional files required for training is in [Baidu Netdisk](https://pan.baidu.com/s/1dv7pyrPKdh-g-3rLOqwCRQ?pwd=yvu6). Please arrange pkl files like this:
-```
-pytorch
-├── admlp
-│   ├── fengze_nuscenes_infos_val.pkl
-│   ├── fengze_nuscenes_infos_train.pkl
-│   ├── stp3_val
-│   │   ├── data_nuscene.pkl
-│   │   ├── filter_token.pkl
-│   │   ├── stp3_occupancy.pkl
-│   │   ├── stp3_traj_gt.pkl
-```
- Start the training process with train.py under the folder.
+  We upload the training code in pytorch/ folder. Additional files required for training is in [Baidu Netdisk](https://pan.baidu.com/s/1dv7pyrPKdh-g-3rLOqwCRQ?pwd=yvu6). Please arrange pkl files like this:
+  ```
+  pytorch
+  ├── admlp
+  │   ├── fengze_nuscenes_infos_val.pkl
+  │   ├── fengze_nuscenes_infos_train.pkl
+  │   ├── stp3_val
+  │   │   ├── data_nuscene.pkl
+  │   │   ├── filter_token.pkl
+  │   │   ├── stp3_occupancy.pkl
+  │   │   ├── stp3_traj_gt.pkl
+  ```
+  Start the training process with train.py under the folder.
 
-Run
+  Run
   ```
   python train.py
   ```
