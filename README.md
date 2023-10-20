@@ -42,13 +42,13 @@ We will also update the technical report recently.
 ## Results
 - Open-loop planning results on [nuScenes](https://github.com/nutonomy/nuscenes-devkit). 
 
-| Method | L2 (m) 1s $\downarrow$ | L2 (m) 2s $\downarrow$ | L2 (m) 3s $\downarrow$ | Col. (%) 1s $\downarrow$ | Col. (%) 2s $\downarrow$ | Col. (%) 3s $\downarrow$ |
-| :---: | :---: | :---: | :---: | :---:| :---: | :---: |
-| ST-P3 | 1.33 | 2.11 | 2.90 | 0.23 | 0.62 | 1.27 |
-| UniAD | 0.48 | 0.96 | 1.65 | **0.05** | 0.17 | 0.71 |
-| VAD-Tiny | 0.20 | 0.38 | 0.65 | 0.10 | 0.12 | 0.27 |
-| VAD-Base | **0.17** | 0.34 | 0.60 | **0.07** | **0.10** | **0.24** |
-| Ours | **0.17** | **0.28** | **0.41** | 0.14 | 0.18 | 0.25 |
+| Method | L2 (m) 1s $\downarrow$ | L2 (m) 2s $\downarrow$ | L2 (m) 3s $\downarrow$ | Avg L2 (m) | Col. (%) 1s $\downarrow$ | Col. (%) 2s $\downarrow$ | Col. (%) 3s $\downarrow$ | Avg Col. (%)
+| :---: | :---: | :---: | :---: | :---: | :---:| :---: | :---: | :---: |
+| ST-P3 | 1.33 | 2.11 | 2.90 | 2.11 | 0.23 | 0.62 | 1.27 | 0.71 |
+| UniAD | 0.48 | 0.96 | 1.65 | 1.03 | **0.05** | 0.17 | 0.71 | 0.31 |
+| VAD-Tiny | 0.20 | 0.38 | 0.65 | 0.41 | 0.10 | 0.12 | 0.27 | 0.16 | 
+| VAD-Base | **0.17** | 0.34 | 0.60 | 0.37 | 0.07 | **0.10** | **0.24** | **0.14** |
+| Ours | **0.17** | **0.28** | **0.41** | **0.29** | 0.14 | 0.18 | 0.25 | 0.19 |
 
 ## Get Started
 
