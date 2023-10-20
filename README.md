@@ -13,14 +13,9 @@ This repository is an official implementation of the technical report [AD-MLP](h
 > \*: equal contribution, <sup>&#8224;</sup>: corresponding author.
 >
 
-## Clarification
-We would like to thank @PointsCoder (related issue https://github.com/E2E-AD/AD-MLP/issues/4) for finding out the mistake in the data we used for training. In short, we mistakenly packaged and used real trajectory data intended for performance debugging. We have fixed the above issue and updated the related links and numbers and apology for potential inconvenience it may cause.
-In general, we have arrived at numbers that differ slightly from what was reported in the previous technical report. Overall, under open-loop evaluation, the L2 error remains superior (0.23 -> 0.29 vs. VAD-Base’s 0.37), while the collision rate has increased (0.12 -> 0.19) and is slightly lower than that of VAD (0.19 vs. 0.14), which only involves about 2 or 3 cases (4819 in total). 
-However, we argue that the fundamental conclusion remains unchanged, which is that **superior open-loop evaluation performance can be achieved on the nuScenes dataset with just past motion information and a simple model**. It may introduce some challenges in measuring and comparing different methods following this evaluation protocol.
-
-We will also update the technical report recently.
 
 ## News
+* 2023.10.20: Update: we would like to thank @PointsCoder (related issue https://github.com/E2E-AD/AD-MLP/issues/4) for finding out the mistake in the data we used for training. We fixed the problem and updated the results. Under open-loop evaluation, the average L2 error: 0.23 -> 0.29, and the collision rate: 0.12 -> 0.19.
 * 2023.05.18: Paper is released on [arxiv](https://arxiv.org/pdf/2305.10430.pdf)!
 * 2023.05.17: Code / Models are released!
 
