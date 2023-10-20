@@ -14,9 +14,11 @@ This repository is an official implementation of the technical report [AD-MLP](h
 >
 
 ## Claim
-We would like to thank @PointsCoder (related to (https://github.com/E2E-AD/AD-MLP/issues/4)) for finding out the mistake in the data we used for training. In short, we mistakenly packaged and used real trajectory data intended for performance debugging. We have fixed the above issue and updated the related links and numbers. 
-In general, we have arrived at numbers that differ slightly from what was reported in the previous technical report. Overall, under open-loop evaluation, the L2 error remains superior (0.23 -> 0.29 vs. VAD-Base’s 0.37), while the collision rate has increased slightly(0.12 -> 0.19) and is slightly lower than that of VAD(0.19 vs. 0.14). 
-However, we argue that the fundamental conclusion remains unchanged, which is that superior open-loop evaluation performance can be achieved on the nuScenes dataset with just past motion information and a simple model. It may introduce some challenges in measuring and comparing different methods following  this evaluation protocol.
+We would like to thank [PointsCoder](https://github.com/PointsCoder) (related to (https://github.com/E2E-AD/AD-MLP/issues/4)) for finding out the mistake in the data we used for training. In short, we mistakenly packaged and used real trajectory data intended for performance debugging. We have fixed the above issue and updated the related links and numbers. 
+In general, we have arrived at numbers that differ slightly from what was reported in the previous technical report. Overall, under open-loop evaluation, the L2 error remains superior (0.23 -> 0.29 vs. VAD-Base’s 0.37), while the collision rate has increased slightly(0.12 -> 0.19) and is slightly lower than that of VAD(0.19 vs. 0.14), which only involves about 2 or 3 samples in all 4819 ones. 
+However, we argue that the fundamental conclusion remains unchanged, which is that **superior open-loop evaluation performance can be achieved on the nuScenes dataset with just past motion information and a simple model**. It may introduce some challenges in measuring and comparing different methods following this evaluation protocol.
+
+We will also update the technical report recently.
 
 ## News
 * 2023.05.18: Paper is released on [arxiv](https://arxiv.org/pdf/2305.10430.pdf)!
@@ -73,7 +75,21 @@ To verify the performance on the nuScenes Dataset, we provide the pretrained mod
   Two versions of evaluation metrics are provided: online and offline. The offline version uses pre-stored ground truth and is far faster than online one. The code defaults to offline.
 
 * Training:
-We upload the training code in pytorch/ folder. Additional files required for training is in [Baidu Netdisk](https://pan.baidu.com/s/1dv7pyrPKdh-g-3rLOqwCRQ?pwd=yvu6). Start the training process with train.py under the folder:
+We upload the training code in pytorch/ folder. Additional files required for training is in [Baidu Netdisk](https://pan.baidu.com/s/1dv7pyrPKdh-g-3rLOqwCRQ?pwd=yvu6). Please arrange pkl files like this:
+```
+pytorch
+├── admlp
+│   ├── fengze_nuscenes_infos_val.pkl
+│   ├── fengze_nuscenes_infos_train.pkl
+│   ├── stp3_val
+│   │   ├── data_nuscene.pkl
+│   │   ├── filter_token.pkl
+│   │   ├── stp3_occupancy.pkl
+│   │   ├── stp3_traj_gt.pkl
+```
+ Start the training process with train.py under the folder.
+
+Run
   ```
   python train.py
   ```
