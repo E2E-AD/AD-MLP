@@ -26,7 +26,7 @@ This repository is an official implementation of the technical report [AD-MLP](h
 
 ### Interesting Tips!
 
-- We use a simple MLP-based approach that takes raw sensor data as input and outputs the future trajectory planning of the ego vehicle, without using any perception or prediction information such as camera images or LiDAR. This simple method achieves state-of-the-art end-to-end planning performance on the nuScenes Dataset, reducing the average L2 error by about 30\% on the nuScenes open-loop evaluation metrics.
+- We use a simple MLP-based approach that takes raw sensor data as input and outputs the future trajectory planning of the ego vehicle, without using any perception or prediction information such as camera images or LiDAR. This simple method achieves state-of-the-art end-to-end planning performance on the nuScenes Dataset, reducing the average L2 error by about 20\% on the nuScenes open-loop evaluation metrics.
 - The primary objective of this work is to present our observations **rather than** to propose a new method.
 - Our findings demonstrate the potential limitations of the current evaluation scheme on the nuScenes dataset.
 - Although our model performs well within the confines of the nuScenes Dataset, we acknowledge that it is merely an impractical toy incapable of functioning in real-world scenarios. Driving without any perception surrounding knowledge beyond the ego vehicle’s states is an insurmountable challenge. 
@@ -40,8 +40,8 @@ This repository is an official implementation of the technical report [AD-MLP](h
 | ST-P3 | 1.33 | 2.11 | 2.90 | 0.23 | 0.62 | 1.27 |
 | UniAD | 0.48 | 0.96 | 1.65 | **0.05** | 0.17 | 0.71 |
 | VAD-Tiny | 0.20 | 0.38 | 0.65 | 0.10 | 0.12 | 0.27 |
-| VAD-Base | 0.17 | 0.34 | 0.60 | 0.07 | **0.10** | 0.24 |
-| Ours | **0.14** | **0.10** | **0.41** | 0.10 | **0.10** | **0.17** |
+| VAD-Base | **0.17** | 0.34 | 0.60 | **0.07** | **0.10** | **0.24** |
+| Ours | **0.17** | **0.28** | **0.41** | 0.14 | 0.18 | 0.25 |
 
 ## Get Started
 
