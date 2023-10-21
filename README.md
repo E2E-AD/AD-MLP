@@ -88,6 +88,15 @@ To verify the performance on the nuScenes Dataset, we provide the pretrained mod
   ```
   python train.py
   ```
+* Pytorch evaluation:
+  We upload the trained weights in pytorch/admlp/mlp.pth to reproduce the results in our technique report.
+  Start the evaluation process with eval_weight.py under the folder.
+
+  Run
+  ```
+  python eval_weight.py
+  ```
+  
 
 * Collision rate evaluation:
 We have observed that the evaluation of model collision rates is sensitive to certain samples. One typical example is when the ego vehicle is in a stationary state, the model often predicts trajectories for the next 3 seconds that are very close to the origin (but not exactly 0). If obstacles exist in the range of [0, 0.5m) in the x,y dimensiosn around the origin, the model's predictions of coordinates with very small absolute values can introduce unstable systematic errors due to the resolution of the occupancy map. To mitigate this issue, we recommend processing the model outputs in the deps/stp3/evaluate_for_mlp.py or at the original model inference stage. For instance, you can set the model's predicted trajectory to zero if the distance from the origin is smaller than a little threshold, e.g. 1e-2m. This approach is similar to the filtering of ground truth trajectories that collide in the original evaluation code, as both methods aim to remove systematic errors. We also suggest reviewing cases where collisions occur.
