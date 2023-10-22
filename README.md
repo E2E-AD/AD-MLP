@@ -83,17 +83,15 @@ To verify the performance on the nuScenes Dataset, we provide the pretrained mod
   │   │   ├── stp3_traj_gt.pkl
   ```
   Start the training process with train.py under the folder.
-
-  Run
   ```
+  cd pytorch/admlp
   python train.py
   ```
 * Pytorch evaluation:
   We upload the trained weights in pytorch/admlp/mlp.pth to reproduce the results in our technique report.
   Start the evaluation process with eval_weight.py under the folder.
-
-  Run
   ```
+  cd pytorch/admlp
   python eval_weight.py
   ```
   
