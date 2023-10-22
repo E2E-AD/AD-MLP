@@ -70,7 +70,7 @@ To verify the performance on the nuScenes Dataset, we provide the pretrained mod
   Two versions of evaluation metrics are provided: online and offline. The offline version uses pre-stored ground truth and is far faster than online one. The code defaults to offline.
 
 * Training:
-  We upload the training code in pytorch/ folder. Additional files required for training is in [Baidu Netdisk](https://pan.baidu.com/s/1dv7pyrPKdh-g-3rLOqwCRQ?pwd=yvu6). Please arrange pkl files like this:
+  We upload the training code in pytorch/admlp folder. Additional files required for training is in [Baidu Netdisk](https://pan.baidu.com/s/1dv7pyrPKdh-g-3rLOqwCRQ?pwd=yvu6). Please arrange pkl files like this:
   ```
   pytorch
   ├── admlp
