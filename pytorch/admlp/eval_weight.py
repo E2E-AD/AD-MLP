@@ -57,7 +57,7 @@ def main(evaluation=False):
     dataset = TokenDataset()
     dataloader = DataLoader(dataset,batch_size,shuffle=True)
     if evaluation:
-        model.load_state_dict(torch.load('rec/mlp.pth',map_location='cpu'))
+        model.load_state_dict(torch.load('mlp.pth',map_location='cpu'))
         device = torch.device('cuda:0')
         model = model.to(device)
         evaluate(model)
